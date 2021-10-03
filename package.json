@@ -1,10 +1,7 @@
 {
   "name": "@vincro/learn-cdk-static-site",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A static site built and deployed with the use of CDK",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vincro/learn-cdk-static-site.git"
@@ -20,8 +17,31 @@
   ],
   "author": "Vincent Roman",
   "license": "CC0 1.0 Universal",
+  "homepage": "https://github.com/vincro/learn-cdk-static-site#readme",
   "bugs": {
     "url": "https://github.com/vincro/learn-cdk-static-site/issues"
   },
-  "homepage": "https://github.com/vincro/learn-cdk-static-site#readme"
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "bin": {
+    "learn-cdk": "bin/learn-cdk-static-site.js"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.125.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "aws-cdk": "1.125.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.125.0",
+    "source-map-support": "^0.5.16"
+  }
 }

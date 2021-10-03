@@ -14,6 +14,7 @@ In this learning in public project, we will build a CDK static site using the fo
 
 | Version | Comments |
 |---|---|
+| 0.1.0 | Add CDK |
 | 0.0.1 | Initial commit |
 
 

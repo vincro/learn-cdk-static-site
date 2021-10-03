@@ -14,6 +14,7 @@ In this learning in public project, we will build a CDK static site using the fo
 
 | Version | Comments                                              |
 | ------- | ----------------------------------------------------- |
+| 0.5.0   | Add CDK environments and GH Actions for CI tests      |
 | 0.4.0   | Add Prettier, ESlint, lint-staged & Husky             |
 | 0.3.0   | Add bucket stack for hosting files and link to domain |
 | 0.2.0   | Add domain setup & notes to the README                |
@@ -60,3 +61,4 @@ It goes without saying that you need setup already:
 Links worth reading/researching:
 
 - https://khalilstemmler.com/blogs/tooling/prettier/
+- https://joelhooks.com/jest-and-github-actions

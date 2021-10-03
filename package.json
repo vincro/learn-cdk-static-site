@@ -1,6 +1,6 @@
 {
   "name": "@vincro/learn-cdk-static-site",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A static site built and deployed with the use of CDK",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
+    "test:ci": "jest",
     "cdk": "cdk",
     "prettier": "prettier --config .prettierrc.json '{bin,lib,src}/**/*.ts' --write",
     "lint": "eslint '{bin,lib,src}/**/*.ts' --ignore-pattern node_modules/",

@@ -19,6 +19,13 @@ In this learning in public project, we will build a CDK static site using the fo
 | 0.1.0 | Add CDK |
 | 0.0.1 | Initial commit |
 
+## Stack
+
+- CDK
+- Typescript
+- [Prettier](https://prettier.io/)
+- [ESlint](https://eslint.org/)
+
 ## Lesson Notes & Thoughts
 
 Thoughts and things I learned along the way which might be of note.
@@ -44,3 +51,10 @@ It goes without saying that you need setup already:
 
 - Unable to destroy/delete buckets when they are not empty.  Had to empty them in console first.
 - Had to export bucket to use with Route53 setup in domain stack.
+
+
+## Research
+
+Links worth reading/researching:
+
+- https://khalilstemmler.com/blogs/tooling/prettier/

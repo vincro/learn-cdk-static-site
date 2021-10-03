@@ -1,12 +1,15 @@
 #!/usr/bin/env node
+import * as dotenv from 'dotenv';
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
 import { StaticSiteDomainStack } from '../lib/domain';
 import { StaticSiteBucketStack } from '../lib/bucket';
 
+dotenv.config()
+
 interface EnvConfig {
-    account: string
-    region: string
+    account?: string
+    region?: string
 }
 
 interface AppConfig {
@@ -16,8 +19,8 @@ interface AppConfig {
 }
 
 const env  = {
-    account: '',
-    region: ''
+  account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
+  region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION
 };
 
 const config : AppConfig = {

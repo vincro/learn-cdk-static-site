@@ -14,6 +14,7 @@ In this learning in public project, we will build a CDK static site using the fo
 
 | Version | Comments |
 |---|---|
+| 0.3.0 | Add bucket stack for hosting files and link to domain |
 | 0.2.0 | Add domain setup & notes to the README |
 | 0.1.0 | Add CDK |
 | 0.0.1 | Initial commit |
@@ -32,7 +33,14 @@ It goes without saying that you need setup already:
 ### Setting Up Domains
 
 - Registered domain with namecheap.com
-- Must deloy stack to get the NS records in Route53
+- Must deploy stack to get the NS records in Route53
 - These can then be copied to namecheap domain management setup
 - To setup an A record you need a target, which means setting up an S3 bucket simultaneously
+- When creating multiple stacks you need to define readonly public properties to use between stacks
+- Deploying S3 cannot be done using region-agnosticism, must set { account, region } property named `env` in props of stack
+- Was able to re-deploy after destruction, but the nameservers changed, and had to amend in namecheap.com
 
+### Setting Up Buckets
+
+- Unable to destroy/delete buckets when they are not empty.  Had to empty them in console first.
+- Had to export bucket to use with Route53 setup in domain stack.

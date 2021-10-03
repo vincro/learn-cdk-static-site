@@ -1,0 +1,27 @@
+{
+  "name": "@vincro/learn-cdk-static-site",
+  "version": "0.0.1",
+  "description": "A static site built and deployed with the use of CDK",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincro/learn-cdk-static-site.git"
+  },
+  "keywords": [
+    "cdk",
+    "learn",
+    "in",
+    "public",
+    "static",
+    "site",
+    "aws"
+  ],
+  "author": "Vincent Roman",
+  "license": "CC0 1.0 Universal",
+  "bugs": {
+    "url": "https://github.com/vincro/learn-cdk-static-site/issues"
+  },
+  "homepage": "https://github.com/vincro/learn-cdk-static-site#readme"
+}

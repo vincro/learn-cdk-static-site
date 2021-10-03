@@ -12,12 +12,13 @@ In this learning in public project, we will build a CDK static site using the fo
 
 ## Changelog
 
-| Version | Comments |
-|---|---|
-| 0.3.0 | Add bucket stack for hosting files and link to domain |
-| 0.2.0 | Add domain setup & notes to the README |
-| 0.1.0 | Add CDK |
-| 0.0.1 | Initial commit |
+| Version | Comments                                              |
+| ------- | ----------------------------------------------------- |
+| 0.4.0   | Add Prettier, ESlint, lint-staged & Husky             |
+| 0.3.0   | Add bucket stack for hosting files and link to domain |
+| 0.2.0   | Add domain setup & notes to the README                |
+| 0.1.0   | Add CDK                                               |
+| 0.0.1   | Initial commit                                        |
 
 ## Stack
 
@@ -25,12 +26,14 @@ In this learning in public project, we will build a CDK static site using the fo
 - Typescript
 - [Prettier](https://prettier.io/)
 - [ESlint](https://eslint.org/)
+- [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Lesson Notes & Thoughts
 
 Thoughts and things I learned along the way which might be of note.
 
 ### Requirements
+
 It goes without saying that you need setup already:
 
 - A non-root AWS account with API access
@@ -49,9 +52,8 @@ It goes without saying that you need setup already:
 
 ### Setting Up Buckets
 
-- Unable to destroy/delete buckets when they are not empty.  Had to empty them in console first.
+- Unable to destroy/delete buckets when they are not empty. Had to empty them in console first.
 - Had to export bucket to use with Route53 setup in domain stack.
-
 
 ## Research
 

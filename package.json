@@ -27,7 +27,8 @@
     "test": "jest",
     "cdk": "cdk",
     "prettier": "prettier --config .prettierrc.json '{bin,lib,src}/**/*.ts' --write",
-    "lint": "eslint '{bin,lib,src}/**/*.ts' --ignore-pattern node_modules/"
+    "lint": "eslint '{bin,lib,src}/**/*.ts' --ignore-pattern node_modules/",
+    "prepare": "husky install"
   },
   "bin": {
     "learn-cdk": "bin/learn-cdk-static-site.js"
@@ -43,7 +44,9 @@
     "@typescript-eslint/parser": "^4.32.0",
     "aws-cdk": "1.125.0",
     "eslint": "^7.32.0",
+    "husky": "^7.0.2",
     "jest": "^26.4.2",
+    "lint-staged": "^11.1.2",
     "prettier": "2.4.1",
     "ts-jest": "^26.2.0",
     "ts-node": "^9.0.0",
@@ -52,5 +55,9 @@
   "dependencies": {
     "@aws-cdk/core": "1.125.0",
     "source-map-support": "^0.5.16"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }

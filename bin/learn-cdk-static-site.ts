@@ -12,7 +12,7 @@ interface EnvConfig {
     region?: string
 }
 
-interface AppConfig {
+export interface AppConfig {
     env: EnvConfig,
     host: string
     domain: string

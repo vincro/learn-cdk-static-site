@@ -60,5 +60,11 @@ It goes without saying that you need setup already:
 
 Links worth reading/researching:
 
+- https://github.com/wwwpro/baws-cdk-monolith
+- https://cdk-advanced.workshop.aws/start.html
+- https://serverlessfirst.com/serverless-cicd-pipelines-with-aws-cdk/
 - https://khalilstemmler.com/blogs/tooling/prettier/
 - https://joelhooks.com/jest-and-github-actions
+- https://www.hodler.co/2021/03/03/tests-for-aws-code/
+- https://kreuzwerker.de/en/post/infrastructure-tests-with-cdk
+- https://cdkworkshop.com/20-typescript/70-advanced-topics/100-construct-testing/2000-validation-tests.html

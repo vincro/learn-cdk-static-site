@@ -110,3 +110,6 @@ cdk.out/
 
 # Ignore artifacts:
 build
+
+# gatsby
+/public/
